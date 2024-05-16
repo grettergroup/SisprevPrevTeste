@@ -1,0 +1,22 @@
+{
+  "pessoa" : {
+    "nome": "Maria",
+    "cpf":"80863914500",
+    "email": "hello@cypress.io"
+  },
+  "pessoa1": {
+    "nome":"Evelyn Jennifer Pinto",
+    "cpf":"40617037574",
+    "dataNascimento": "02031975",
+    "nomeMae": "Natália Gabriela Luana",
+    "ufNascimento": "MT",
+    "naturalidade": "CUIABA",
+    "orgao": "SESP",
+    "numeroRg": "294932197",
+    "ufDocumento": "MT",
+    "dataExpedicao": "17052010",
+    "cep": "78005300",
+    "foneCelular": "6533223400"
+  }
+
+}

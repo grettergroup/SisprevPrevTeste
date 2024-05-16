@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "script": "cypress run --browser chrome & node cypress.report.js && start cypress/reports/report-html/index.html"
+  },
+  "devDependencies": {
+    "cypress": "^13.9.0",
+    "cypress-sql-server": "^1.0.0",
+    "faker": "^5.5.3",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "gerador-validador-cpf": "^5.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/src/**/**/**/*.steps.js",
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "json": {
+      "enabled": true,
+      "formatter": "cypress/reports/json/cucumber-json-formatter",
+      "output": "cypress/reports/json/cucumber-report.json"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/messages/cucumber-messages.ndjson"
+    }
+  }
+}
